@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+* ul {
+    list-style: none;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 36em;
+    margin: auto;
+    background-color: #fff;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em;
+    border-radius: 0.5em 0.5em 0 0;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes heading {
+    0% {
+        top: -20em
+    }
+
+    100% {
+        top: -0.5em
+    }
+
+}
+
+.wrapper h3 {
+    color: hsl(179, 62%, 43%);
+
+}
+
+.wrapper .p1 {
+    color: hsl(71, 73%, 54%);
+}
+
+.wrapper .p2 {
+    color: hsl(218, 22%, 67%);
+    font-size: 0.9em;
+}
+
+.main {
+    width: 100%;
+    max-width: 36em;
+    /* /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* background-color: hsl(179, 62%, 43%); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin: auto;
+    /* margin-top: -0.5em; */
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-top: 1.6em;
+
+}
+
+.wrapper-2 {
+    width: 100%;
+    max-width: 18em;
+    padding: 1.5em;
+    color: #fff;
+    background-color: hsl(179, 62%, 43%);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 0 0 0 0.5em;
+    position: relative;
+    animation-name: wrapper-2;
+    animation-duration: 3s;
+    /* animation-delay: 5s; */
+}
+
+@keyframes wrapper-2 {
+    0% {
+        left: -50em;
+    }
+
+    100% {
+        left: 0;
+    }
+
+}
+
+.wrapper-2 .dollar {
+    font-size: 1.5em;
+}
+
+.wrapper-2 .amount #month {
+    color: hsl(204, 43%, 93%);
+    font-size: 0.8em;
+}
+
+.wrapper-2 .access {
+    color: hsl(204, 43%, 93%);
+}
+
+.wrapper-2 button {
+    width: 100%;
+    max-width: 15em;
+    border-radius: 0.3em;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    border: none;
+    padding: 1em;
+}
+
+.wrapper-3 {
+    width: 100%;
+    max-width: 18em;
+    padding: 1.5em;
+    background-color: hsl(179, 44%, 59%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 0 0 0.5em 0;
+    position: relative;
+    animation-name: wrapper-3;
+    animation-duration: 3s;
+
+}
+
+@keyframes wrapper-3 {
+    0% {
+        right: -50em;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+    .wrapper-3 h3 {
+        font-weight: 300;
+    }
+
+    .wrapper-3 ul {
+        color: hsl(204, 43%, 93%);
+        font-size: 0.9em;
+    }
+
+    .main-wrapper {
+        width: 100;
+        max-width: 36em;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(25%);
+
+
+    }
+
+    .amount {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
